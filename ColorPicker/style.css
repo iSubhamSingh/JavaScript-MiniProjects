@@ -1,0 +1,39 @@
+.container{
+    display: flex;
+     
+    justify-content: center;
+    margin-top: 150px;
+     
+} 
+
+.button{
+    border: 2px solid black;
+    padding: 50px;
+    margin: 20px;
+     
+}
+
+#green{
+    background-color: green;
+    border-radius: 10px;
+}
+
+#blue{
+    background-color: blue;
+    border-radius: 10px;
+}
+
+#red{
+    background-color: red;
+    border-radius: 10px;
+}
+
+#yellow{
+    background-color: yellow;
+    border-radius: 10px;
+}
+
+#white{
+    border-radius: 10px;
+     
+}
