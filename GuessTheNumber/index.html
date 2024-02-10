@@ -9,16 +9,17 @@
   <body>
     <div class="container">
       <form class="form">
-        <p>Enter the number</p>
+        <p style="font-weight: bold; font-size: xx-large;">Enter the number</p>
         <input type="text" id="input" /><br>    
-        <input type="submit" id="submit" value="Submit guess" />
+        <input type="submit" id="submit" class="button" value="Submit guess" />
+        <input type="button" id="restart" class="button" value="New game">
       </form>
 
       <div class="results">
         <p>Previous guesses</p>
         <span id="previousG"></span>
         <p>Remaining guess</p>
-        <span id="remainingG"></span>
+        <span id="remainingG">10</span>
         <span class="correctAns"></span>
       </div>
     </div>

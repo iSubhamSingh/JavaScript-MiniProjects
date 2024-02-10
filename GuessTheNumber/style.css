@@ -1,9 +1,11 @@
 body{
     background-color: black;
     color: white;
+    font-size: larger;
 }
 
 .container{
+
     border: 2px solid white;
     display: flex;
     flex-direction: column;
@@ -12,16 +14,24 @@ body{
     justify-content: center;
     border-radius: 10px;
     gap: 2rem;
-     
-
+    margin:  30px 150px 0px 150px;
+ 
 }
 
-#submit{
+#previousG{
+    border: 2px solid black;
+    
+}
+
+.button{
+    margin: 30px 10px ;
     padding: 10px;
     background-color: rgb(43, 224, 43);
     border-radius: 8px;
 }
-
+#restart{
+    background-color: rgb(47, 142, 219);
+}
 #input{
     padding: 20px;
     border-radius: 10px;

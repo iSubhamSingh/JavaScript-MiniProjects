@@ -1,12 +1,13 @@
-let randomNum = parseInt(Math.random() * 100 + 1);
+let randomNum = parseInt(Math.random() * 100  +  1);
 
 const submit = document.querySelector("#submit");
 const userInput = document.querySelector("#input");
 const prevG = document.querySelector("#previousG");
 const remainingG = document.querySelector("#remainingG");
 const correct = document.querySelector(".correctAns");
+const restart = document.querySelector("#restart");
 
-let i = 0;
+let increment = 0;
 let remain = 0;
 
 submit.addEventListener("click", function (e) {
@@ -22,7 +23,7 @@ function validate(inputNumber) {
     userInput.value = "";
   } else {
     if (inputNumber == randomNum) {
-      correct.innerHTML = `<h2>Congratulations! You guessed the correct answer</h2>`;
+      correct.innerHTML = `<h2 style="color:green">Congratulations! You guessed the correct answer</h2>`;
       endgame();
     } else if (inputNumber > randomNum) {
       correct.innerHTML = `<h2>Your guess is too high</h2>`;
@@ -38,10 +39,11 @@ function validate(inputNumber) {
 
 function printMessage(inputNumber){
     prevG.innerHTML += ` ${inputNumber} `;
-    remain = 10- i++;
+    remain = (10- ++increment );
 
     if(remain == 0){
         endgame();
+        correct.innerHTML = `<h2 style="color:red">Game Over!</h2><p ><strong>Correct Ans : ${randomNum}</strong></p>`;
     } 
     remainingG.innerHTML = ` ${remain} `;
     userInput.value = "";
@@ -51,11 +53,7 @@ function printMessage(inputNumber){
 function endgame(){
     userInput.disabled = true;
     submit.disabled = true;
-    let btn = document.createElement("button");
-    btn.innerHTML = "New Game";
-    document.body.appendChild(btn);
-
-    btn.addEventListener("click", newGame);
+    restart.addEventListener("click", newGame);
    
 }
 
