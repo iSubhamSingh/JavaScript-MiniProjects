@@ -1,0 +1,29 @@
+body{
+    background-color: black;
+    color: white;
+}
+
+.container{
+    border: 2px solid white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    border-radius: 10px;
+    gap: 2rem;
+     
+
+}
+
+#submit{
+    padding: 10px;
+    background-color: rgb(43, 224, 43);
+    border-radius: 8px;
+}
+
+#input{
+    padding: 20px;
+    border-radius: 10px;
+
+}
