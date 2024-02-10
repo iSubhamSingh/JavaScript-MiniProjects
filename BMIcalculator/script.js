@@ -4,6 +4,11 @@ form.addEventListener('submit',function(e){
     e.preventDefault();
     let height = parseInt(document.querySelector('#height').value);
     let weight = parseInt(document.querySelector('#weight').value);
+
+    if(isNaN(height) || isNaN(weight)){
+     alert("Please enter valid height and weight"); 
+     return;
+    }
     let bmi = (weight / ((height*height)/10000)).toFixed(2);
 
     let result = document.querySelector('.result');
