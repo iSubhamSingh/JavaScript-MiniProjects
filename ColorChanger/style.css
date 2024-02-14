@@ -1,3 +1,10 @@
-body{
-    background-color: #e67b96 ;
+.btn{
+    padding: 10px;
+    border-radius: 8px;
+    width: 120px;
+    margin: 10px;
+    background-color: rgb(35, 218, 218);
+
 }
+
+
