@@ -1,5 +1,5 @@
 let object = new XMLHttpRequest;
-object.open("GET","https://api.github.com/users/<replace_with_desired_userID>");
+object.open("GET","https://api.github.com/users/<add_userID>");
 
 object.onload = function(){
     let data = JSON.parse(object.response);
@@ -15,5 +15,8 @@ object.onload = function(){
 
     let followers = document.querySelector(".followers-count");
     followers.innerHTML = data.followers;
+
+    let public_repos = document.querySelector(".publicRepos");
+    public_repos.innerHTML = data.public_repos;
 }
 object.send();
