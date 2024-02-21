@@ -5,7 +5,7 @@ form.addEventListener('submit',function(e){
     let height = parseInt(document.querySelector('#height').value);
     let weight = parseInt(document.querySelector('#weight').value);
 
-    if(isNaN(height) || isNaN(weight)){
+    if(isNaN(height) || isNaN(weight) || height == null || weight == null){
      alert("Please enter valid height and weight"); 
      return;
     }
