@@ -18,5 +18,8 @@ object.onload = function(){
 
     let public_repos = document.querySelector(".publicRepos");
     public_repos.innerHTML = data.public_repos;
+
+    let hireable = document.querySelector(".hireable_status");
+    hireable.innerHTML = data.hireable;
 }
 object.send();
