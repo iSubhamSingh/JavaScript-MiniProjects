@@ -1,5 +1,5 @@
 let object = new XMLHttpRequest;
-object.open("GET","https://api.github.com/users/<add_userID>");
+object.open("GET","https://api.github.com/users/isubhamsingh");
 
 object.onload = function(){
     let data = JSON.parse(object.response);
